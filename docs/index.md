@@ -1,3 +1,13 @@
+---
+title: AndroidKotlinPath 学习路径
+date: 2026-01-18 00:00:00
+categories: Android
+---
+
+AndroidKotlinPath 是一个系统的 Android 开发学习路径，采用单应用架构，将 10 个渐进式 Lab 集成在一个应用中，通过 RecyclerView 主界面导航，学习 Android 核心技术和 Kotlin 语言。
+
+<!--more-->
+
 # AndroidKotlinPath
 
 Android + Kotlin + View/XML，通过各种 Lab 将这些融会贯通。
@@ -75,7 +85,7 @@ AndroidKotlinPath App
 - 文件存储
 - 实践：记事本应用
 
-#### Lab6-Service 与后台任务
+#### Lab6-Service & 后台任务
 - Service 生命周期
 - 前台 Service
 - BroadcastReceiver
@@ -221,6 +231,89 @@ cd AndroidKotlinPath
 4. 完成实践任务
 5. 在主界面点击对应 Lab 查看运行效果
 
+## 学习建议
+
+1. **循序渐进**：按照 Lab 顺序逐步学习，不要跳过基础内容
+2. **动手实践**：每个 Lab 都有实践任务，务必亲自完成
+3. **理解原理**：不只是复制代码，要理解背后的原理
+4. **查阅文档**：遇到问题时学会查阅官方文档
+5. **总结笔记**：记录学习过程中的重要知识点和遇到的问题
+6. **代码复用**：利用单应用架构优势，参考前面 Lab 的代码
+
+## 学习资源
+
+### 官方文档
+- [Android Developers](https://developer.android.com/)
+- [Kotlin 官方文档](https://kotlinlang.org/docs/home.html)
+- [Android Studio](https://developer.android.com/studio)
+
+### 推荐书籍
+- 《Android 开发艺术探索》
+- 《Kotlin 实战》
+- 《第一行代码 - Android》（第3版）
+
+### 社区资源
+- [Stack Overflow - Android](https://stackoverflow.com/questions/tagged/android)
+- [GitHub Android Awesome](https://github.com/android-awesome/android-awesome)
+- [Android 中文组](https://github.com/Android-CN)
+
+## 常见问题
+
+### Q1: 需要有编程基础吗？
+**A**: 最好有基本的编程概念，了解变量、函数、条件判断等。如果有 Java 或其他面向对象语言基础会更容易上手。
+
+### Q2: 学习周期需要多久？
+**A**: 如果每天投入 2-3 小时，完成所有 Lab 大约需要 3-4 个月。
+
+### Q3: 需要什么设备？
+**A**:
+- **最低配置**: 8GB RAM, 支持 VT-x 的 CPU
+- **推荐配置**: 16GB RAM, SSD 硬盘
+- **可选**: Android 真机（用于测试）
+
+### Q4: Kotlin 和 Java 应该学哪个？
+**A**: 推荐直接学习 Kotlin。Kotlin 是 Google 官方推荐的语言，语法更简洁，安全性更高。
+
+### Q5: 学习完这些 Lab 能达到什么水平？
+**A**: 可以独立开发功能完整的 Android 应用，相当于初中级 Android 开发工程师水平。
+
+### Q6: 为什么要用单应用架构？
+**A**:
+- 便于学习和参考：所有代码集中，方便查看和对比
+- 真实开发体验：模拟实际项目的模块化开发
+- 资源共享：工具类、资源文件可以复用
+- 减少配置：无需配置多个项目
+
+### Q7: 如何添加新的 Lab？
+**A**:
+1. 在 `ui/labX/` 包下创建 Activity
+2. 在 `res/layout/` 中创建布局文件
+3. 在 `AndroidManifest.xml` 中注册
+4. 在主界面的 RecyclerView Adapter 中添加条目
+5. 创建对应的文档文件
+
+## 版本说明
+
+- **语言**: Kotlin 2.0.21
+- **最低 SDK**: API 33 (Android 13)
+- **目标 SDK**: API 36
+- **AGP**: 8.13.1
+- **Gradle**: 8.13
+
+## 贡献指南
+
+欢迎提交 Issue 和 Pull Request！
+
+如果你在学习过程中发现任何问题或有改进建议，请：
+1. Fork 本项目
+2. 创建你的特性分支
+3. 提交你的修改
+4. 发起 Pull Request
+
 ## 许可证
 
 本项目采用 [LICENSE](LICENSE) 许可证。
+
+---
+
+**开始学习**: [Lab1-Hello World & 环境搭建](Lab1-HelloWorld.md)
